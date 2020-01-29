@@ -1,0 +1,51 @@
+body { 
+	font-family: helvetica, arial, sans-serif;
+  	background-color: #2E2E31;
+}
+
+p {
+	top: 40%;
+	left: 45%;
+	text-transform: uppercase;
+	display: inline-block;
+	position: absolute;
+	margin: 0 0 0 -10em;
+}
+
+span {
+  font-size: 4em;
+  font-weight: bold;
+  padding: 25px 25px;
+	display: block;
+	margin: auto auto;
+  	text-shadow: 0 0 70px #4AE1C5;
+	background: url(https://media2.giphy.com/media/3ornjQpUoYc8qoRmFy/giphy.gif?cid=790b7611812905693576cf00baa65a447e17b7edd85b16f6&rid=giphy.gif) 
+							repeat-y;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	
+}
+
+span:after {
+  content: '';
+  padding: 15px 15px;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 150%;
+  top: 50%;
+  display: block;
+  border: 10px solid  ;
+	border-image: url(https://media2.giphy.com/media/5bDAc3il2DySZAFGpQ/giphy.gif?cid=790b761193cf926d1c9f1a6a0ca1c4aef7d65d583cca3806&rid=giphy.gif);
+  border-image-slice: 100;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 5s  alternate ease-in-out animacion;
+}
+
+@keyframes animacion {
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
